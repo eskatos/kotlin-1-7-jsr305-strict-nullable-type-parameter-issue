@@ -1,6 +1,6 @@
 package some;
 
-import org.jetbrains.annotations.Nullable;
+import org.jspecify.annotations.Nullable;
 
 interface Transformer<OUT extends @Nullable Object, IN> {
 

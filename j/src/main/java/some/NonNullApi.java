@@ -1,13 +1,13 @@
 package some;
 
-import javax.annotation.Nonnull;
 import javax.annotation.meta.TypeQualifierDefault;
 import java.lang.annotation.*;
 
 @Target({ElementType.TYPE, ElementType.PACKAGE})
+@javax.annotation.Nonnull
 @org.jetbrains.annotations.NotNull
-@Nonnull
-@TypeQualifierDefault({ElementType.METHOD, ElementType.PARAMETER})
+@org.jspecify.annotations.NonNull
+@TypeQualifierDefault({ElementType.METHOD, ElementType.PARAMETER, ElementType.TYPE_PARAMETER})
 @Documented
 @Retention(RetentionPolicy.RUNTIME)
 public @interface NonNullApi {

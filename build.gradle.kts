@@ -9,6 +9,7 @@ project(":j") {
     dependencies {
         "implementation"("com.google.code.findbugs:jsr305:3.0.2")
         "implementation"("org.jetbrains:annotations:23.1.0")
+        "implementation"("org.jspecify:jspecify:0.3.0")
     }
 }
 

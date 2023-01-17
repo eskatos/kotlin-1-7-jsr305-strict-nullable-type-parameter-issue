@@ -4,8 +4,8 @@ import some.Provider
 val provider: Provider<String>
     get() = TODO()
 
-fun some() {
+fun main() {
 
-    provider.map { null }
-
+    val one: Provider<String?> = provider.mapNullable<String?> { null }
+    val two: Provider<String> = provider.mapNonNullable { null }
 }
