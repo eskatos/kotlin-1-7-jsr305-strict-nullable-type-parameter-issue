@@ -1,4 +1,3 @@
-@NonNullApi
 @NullMarked
 package some;
 
